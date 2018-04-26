@@ -32,7 +32,16 @@ class Event extends Component {
 
     }
 
+    dateToString(dateString) {
+        const dateArray = dateString.split("-");
+        const monthDateObj = new Date(dateString);
 
+        const year = dateArray[0];
+        const month = monthDateObj.toLocaleString("no-nb", { month: "long" });
+        const day = dateArray[2];
+
+        return day + ". " + month + " " + year;
+    }
     findEventByPropName() {
         for(let i = 0; i < eventData.events.length; i++) {
             if(this.state.eventName === eventData.events[i].name.toLowerCase()) {
@@ -52,7 +61,7 @@ class Event extends Component {
             !this.state.isLoading ? (
                 <div className="Event fade-in" >
                     <Header/>
-                    <FrontImage imgUrl={urlBase + imgUrl} title={'IAESTEs Næringslivsdager i ' + name} underTitle = {date}/>
+                    <FrontImage imgUrl={urlBase + imgUrl} title={'IAESTEs Næringslivsdager i ' + name} underTitle = {this.dateToString(date)}/>
                     <TextComponent title="" text ={description}/>
                     <TextComponent title="Program" text ="" bgColor="#223847"/>
                     <div className="program-container">

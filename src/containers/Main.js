@@ -14,19 +14,22 @@ import eventData from "../events.json";
 class Main extends Component {
     render() {
     const urlBase = "http://pires.no";
-    const jsonMain = mainData.main;
-    const jsonEvents = eventData.events;
+    const jsonMain = mainData;
+    const jsonEvents = eventData;
 
     console.log(jsonEvents);
         return (
             <div className="Main">
                 <Header />
-                <FrontImage className = "fade-in" imgUrl={ urlBase + jsonMain.frontImg} title={jsonMain.frontTitle}/>
-                <TextComponent title={jsonMain.mainTitle} text ={jsonMain.mainParagraph}/>
+                <FrontImage className = "fade-in" imgUrl={ urlBase + jsonMain.main.frontImg} title={jsonMain.main.frontTitle}/>
+                <TextComponent title={jsonMain.main.mainTitle} text ={jsonMain.main.mainParagraph}/>
                 <TextComponent title="Arrangementer" text ="" bgColor="#223847"/>
-                <EventsRow events = {jsonEvents}/>
+                <EventsRow events = {jsonEvents.events}/>
+
                 <TextComponent title="Bedrift? Meld din interesse!" bgColor="#79ABC8"/>
                 <RegisterCompany/>
+
+                <TextComponent title={jsonMain.purpose.title} text={jsonMain.purpose.text} bgColor="#79ABC8"/>
                 <Footer/>
 
             </div>
