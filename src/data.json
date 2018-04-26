@@ -1,0 +1,71 @@
+{
+  "main" :
+  {
+    "frontTitle" : "IAESTEs Næringslivsdager",
+    "frontImg" : "/img/in_front.jpg",
+    "mainTitle" : "IAESTEs Næringslivsdager 30 år!",
+    "mainParagraph" : "IN 2019 er vårt 30. IN, og vi ønsker å feire at vi er Norges eldste og første karrieredag rettet mot realfags- og teknologistudenter. Vi håper dere ønsker å være en del av den historiske feiringen."
+  },
+
+  "events":[
+    {
+      "name" : "Trondheim",
+      "date" : "31-01-2019",
+      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
+      "imgUrl" : "/img/in_front.jpg",
+      "program" :
+      {
+        "element1" : "First",
+        "element2" : "2nth"
+      }
+    },
+    {
+      "name" : "Stavanger",
+      "date" : "22-01-2019",
+      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
+      "program" :
+      {
+        "element1" : "First",
+        "element2" : "2nth"
+      }
+    },
+    {
+      "name" : "Oslo",
+      "date" : "15-02-2019",
+      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
+      "program" :
+      {
+        "element1" : "First",
+        "element2" : "2nth"
+      }
+    },
+    {
+      "name" : "Tromsø",
+      "date" : "18-02-2019",
+      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
+      "program" :
+      {
+        "element1" : "First",
+        "element2" : "2nth"
+      }
+    }
+  ],
+
+  "partners" : [
+    {
+      "name" : "NTNU",
+      "logoUrl" : "/img/ntnu.png",
+      "webUrl" : "http://ntnu.no"
+    },
+    {
+      "name" : "Tekna",
+      "logoUrl" : "/img/tekna.png",
+      "webUrl" : "http://tekna.no"
+    },
+    {
+      "name" : "KarriereStart",
+      "logoUrl" : "/img/karrierestart.png",
+      "webUrl" : "http://karrierestart.no"
+    }
+  ]
+}
