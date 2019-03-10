@@ -8,7 +8,7 @@ class RegisterForm extends Component {
 
         return (
             <div className="register-form">
-                <iframe className="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScbx8h0ZJ6ybDS30CI40BlbxzaMQiMG2BDcNbhkDbvRu992Iw/viewform"/>
+                <iframe className="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdaZm2GtqhIY6qDknF-6sRLToF156--YQwldpDOqk3UbSDDag/viewform"/>
             </div>
         );
     }
