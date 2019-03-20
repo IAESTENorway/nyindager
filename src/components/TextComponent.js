@@ -19,6 +19,7 @@ class TextComponent extends Component {
 
         const style = {
             backgroundColor: `${this.state.bgColor}`,
+            textAlign: 'center',
         };
         return (
             <div style={style} className="text-comp">

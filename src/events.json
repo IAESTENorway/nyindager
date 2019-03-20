@@ -2,56 +2,23 @@
   "events":[
     {
       "name" : "Trondheim",
-      "date" : "2019-01-31",
-      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
+      "date" : "2020-02-06",
+      "description" : "Torsdag 6. februar 2020 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på PlaceholderLocation1.",
       "imgUrl" : "/img/in_front.jpg",
       "program" :
       [
         {
-          "timeString" : "10:00",
-          "description" : "Standområdet åpnes",
-          "eventHolder" : "IAESTE"
-        },
-        {
-          "timeString" : "10:15 - 11:00",
-          "description" : "LinkedIn-kurs",
-          "eventHolder" : "Tekna"
-        },
-        {
-          "timeString" : "Hele dagen",
-          "description" : "LinkedIn- og CV-fotografering av Tekna",
-          "eventHolder" : "Tekna"
-
-
-        },
-        {
-          "timeString" : "11:00",
-          "description" : "Gratis lunch",
-          "eventHolder" : "IAESTE"
-
-        },
-        {
-          "timeString" : "13:20 - 14:00",
-          "description" : "Foredrag: Be a star in ESA's Universe",
-          "eventHolder" : "ESA (European Space Agency)"
-        },
-        {
-          "timeString" : "14:00",
-          "description" : "Premieutdeling til vinnere av dagens konkurranser",
-          "eventHolder" : "IAESTE"
-        },
-        {
-          "timeString" : "15:00",
-          "description" : "Standområdet stenger",
-          "eventHolder" : ""
+          "timeString" : "--:--",
+          "description" : "Mer info kommer",
+          "eventHolder" : "Mer info kommer"
         }
 
       ]
     },
     {
       "name" : "Stavanger",
-      "date" : "2019-01-22",
-      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
+      "date" : "2020-01-21",
+      "description" : "Tirsdag 21. januar 2020 arrangeres IAESTEs Næringslivsdager ved UiS Stavanger. Arrangementet finner sted på PlaceholderLocation2.",
       "program" :
       {
         "element1" : "First",
@@ -60,23 +27,14 @@
     },
     {
       "name" : "Oslo",
-      "date" : "2019-02-15",
-      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
-      "program" :
-      {
-        "element1" : "First",
-        "element2" : "2nth"
-      }
-    },
-    {
-      "name" : "Tromsø",
-      "date" : "2019-02-19",
-      "description" : "Onsdag 29. januar 2019 arrangeres IAESTEs Næringslivsdager ved NTNU Trondheim. Arrangementet finner sted på Elektrobygget.",
+      "date" : "2020-02-13",
+      "description" : "Torsdag 13. februar 2020 arrangeres IAESTEs Næringslivsdager ved UiO Oslo. Arrangementet finner sted på PlaceholderLocation3.",
       "program" :
       {
         "element1" : "First",
         "element2" : "2nth"
       }
     }
+
   ]
 }
