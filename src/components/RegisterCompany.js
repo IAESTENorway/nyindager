@@ -11,7 +11,7 @@ class RegisterCompany extends Component {
 
             <div className="register-company">
                 <Link to ="/register">
-                    <button type="button" className="btn btn btn-outline-light"><h2>Meld inn bedrift</h2></button>
+                    <button type="button" className="btn btn btn-outline-light btn-goto-register"><h2>Meld inn bedrift</h2></button>
                 </Link>
             </div>
 

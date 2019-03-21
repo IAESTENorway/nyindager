@@ -19,14 +19,9 @@ class FrontImage extends React.Component {
 
     render() {
         const frontImgStyle = {
-            width: "100%",
-            height: "90vh",
+
             backgroundImage: `url(${this.state.imgUrl})`,
-            backgroundOrigin: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column"
+
         };
 
         return(
