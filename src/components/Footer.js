@@ -13,8 +13,8 @@ class Footer extends Component {
         return (
 
             <footer>
+            <p> Våre samarbeidspartnere </p>
                 <div className="partners-container">
-                    <p> Våre samarbeidspartnere </p>
                     {
                         partners.length > 0 ? partners.map(partner => {
                             const {name, logoUrl, webUrl} = partner;
