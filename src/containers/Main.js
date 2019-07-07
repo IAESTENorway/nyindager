@@ -22,9 +22,9 @@ class Main extends Component {
             <div className="Main">
                 <Header />
                 <FrontImage className = "fade-in" imgUrl={ urlBase + jsonMain.main.frontImg} title={jsonMain.main.frontTitle}/>
-                <TextComponent title={jsonMain.main.mainTitle} text ={jsonMain.main.mainParagraph}/>
-                <TextComponent title="Arrangementer" text ="" bgColor="#223847"/>
                 <EventsRow events = {jsonEvents.events}/>
+                <TextComponent title={jsonMain.main.mainTitle} text ={jsonMain.main.mainParagraph}/>
+
 
                 <TextComponent title="Bedrift? Meld din interesse!" bgColor="#79ABC8"/>
                 <RegisterCompany/>

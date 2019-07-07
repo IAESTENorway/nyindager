@@ -30,6 +30,7 @@ class FrontImage extends React.Component {
                 <img src={frontLogo}/>
                 <h1 className="front-img-title">{this.state.title}</h1>
                 <h3 >{this.state.underTitle}</h3>
+
             </div>
 
         )

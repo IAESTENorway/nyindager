@@ -20,11 +20,6 @@
       "webUrl" : "http://ntnu.no"
     },
     {
-      "name" : "Tekna",
-      "logoUrl" : "/img/tekna.png",
-      "webUrl" : "http://tekna.no"
-    },
-    {
       "name" : "KarriereStart",
       "logoUrl" : "/img/karrierestart.png",
       "webUrl" : "http://karrierestart.no"
