@@ -7,6 +7,7 @@ class Header extends Component {
     render() {
         return (
             <header className="cf">
+            <div className="flexcontainer">
                 <ul className="nav center">
                     <li className="nav-item">
                         <Link to ="/">
@@ -22,7 +23,7 @@ class Header extends Component {
                 <nav className="main-nav">
                   <ul>
                     <li className="nav-item custom-nav">
-                      <a href="#top">
+                      <a href="/register">
                         Påmelding
                       </a>
                     </li>
@@ -43,6 +44,7 @@ class Header extends Component {
                     </li>
                   </ul>
               </nav>
+              </div>
            </header>
         );
     }

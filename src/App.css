@@ -71,7 +71,7 @@ header h5 {
 
 .nav {
   text-align: center;
-  display: block !important;
+  justify-content: center;
 }
 
 .nav li {
@@ -79,22 +79,32 @@ header h5 {
 }
 
 
-@media screen and (min-width: 825px) {
+@media screen and (min-width: 925px) {
 
   header {
     position: fixed;
   }
 
+  .nav,
+  .main-nav,
+  .flexcontainer,
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   .nav {
-    float: left;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: auto;
   }
 
-  .main-nav {
-		float: right;
+  nav ul {
+      justify-content: flex-end;
+      flex-direction: row;
 	}
 
   .main-nav li {
-		float: left;
+    font-size: 1.3em;
 		padding: 5px;
 		margin-top: 10px;
 		margin-right: 10px;
@@ -104,13 +114,6 @@ header h5 {
 		padding: 10px;
     font-size:  0.9em;
 	}
-
-
-  .cf:after {
-      content: " ";
-      display: table;
-      clear: both;
-  }
 
 }
 
