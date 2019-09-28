@@ -34,11 +34,6 @@ class Header extends Component {
                     </li>
                     <li className="nav-item custom-nav">
                       <a href="#top">
-                        For bedrifter
-                      </a>
-                    </li>
-                    <li className="nav-item custom-nav">
-                      <a href="#top">
                         Om oss
                       </a>
                     </li>

@@ -5,6 +5,9 @@
   font-style: normal;
   font-weight: normal;
 }
+
+
+
 .fade-in {
   opacity: 1;
   animation-name: fadeInOpacity;
@@ -12,6 +15,10 @@
   animation-timing-function: ease-in;
   animation-duration: 0.7s;
 }
+
+/* ------------------------- */
+/*   MAIN STYLES  */
+/* ------------------------- */
 
 body {
   background-color: #0e1921 !important;
@@ -29,6 +36,20 @@ h1, h2, h3, h4 {
 p, h5, h6 {
   font-family: Lato, sans-serif !important;
 }
+
+p {
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+/* ------------------------- */
+/*     HEADER   */
+/* ------------------------- */
 
 header {
   background-color: #0e1921;
@@ -52,10 +73,14 @@ header h5 {
   line-height: 56px;
 }
 
+/* ------------------------- */
+/*  NAVIGATION BAR */
+/* ------------------------- */
+
 .custom-nav {
   text-align: center;
   padding: 7.5px;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .custom-nav a {
@@ -79,8 +104,283 @@ header h5 {
 }
 
 
+footer {
+  width: 100%;
+  background-color: #0e1921;
+}
+
+/* ------------------------- */
+/*  FRONT IMAGE AND TITLE    */
+/* ------------------------- */
+
+.front-img {
+  width: 100%;
+  height: 65vh;
+  background-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.front-img .front-img-title {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+
+.front-img h3 {
+  color: white;
+}
+
+.front-title {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+
+/* ------------------------- */
+/*        EVENT ROW          */
+/* ------------------------- */
+
+.text-comp {
+  background-color: #82B6D5;
+  width: 100%;
+  padding: 2em 0 2em 0;
+}
+
+.events-row {
+  width: 100%;
+  background-color: #172A38;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ------------------------- */
+/*        EVENT BOX          */
+/* ------------------------- */
+
+.event-box {
+  cursor: pointer;
+  flex: 1;
+  transition: background-color 0.2s;
+  padding: 2em;
+  /*tmp*/
+  min-height: 200px;
+  height: 300px;
+  display: flex;
+}
+
+.event-box div {
+  margin: auto;
+}
+
+.event-box h1 {
+  color: white;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.event-box p {
+  text-align: center;
+}
+
+/* ------------------------- */
+/*    Specified actions      */
+/* ------------------------- */
+
+.event-box h1:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.event-box:nth-child(even) {
+  background-color: #142531;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.event-box:hover {
+  background-color: #0e1921;
+}
+.event-box:hover h1 {
+  transform: scale(1.05, 1.05);
+}
+
+/* ------------------------- */
+/*    REGISTRATION STYLES    */
+/* ------------------------- */
+
+.register-company {
+  width: 100%;
+  background-color: #82B6D5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0 4em 0;
+}
+
+.register-form {
+  width: 100%;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+.register-form iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*   Button styles   */
+.register-button {
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.btn-goto-register h2 {
+  margin-bottom: 0 !important;
+}
+
+
+
+/* ------------------------- */
+/*    PROGRAM STYLES    */
+/* ------------------------- */
+
+.program-container {
+  background-color: #172A38;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 20% 5% 20%;
+}
+
+
+/*   Active Styles   */
+.program-item:nth-child(even) {
+  background-color: #172A38 !important;
+}
+
+.program-item:nth-child(odd) {
+  background-color: #0e1921 !important;
+}
+
+.program-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 2%;
+}
+.program-item h4 {
+  flex: 1;
+}
+.program-item h5 {
+  flex: 2;
+}
+.program-item h6 {
+  flex: 0.5;
+}
+
+/* ------------------------- */
+/*          FOOTER           */
+/* ------------------------- */
+
+footer {
+  display: flex !important;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 1em;
+}
+footer .partners-container {
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+
+/*   Partner items     */
+.partner-item img {
+  width: 150px;
+}
+
+.iaeste-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iaeste-info img {
+  height: 48px;
+}
+
+.iaeste-info * {
+  color: white !important;
+}
+
+/* ------------------------- */
+/*      MEDIA QUERIES        */
+/* ------------------------- */
+
+@media screen and (max-width: 460px) {
+
+  /* Program page */
+  .program-container {
+    padding: 0 !important;
+  }
+
+  /* Front image and title */
+  .front-img-title {
+    font-size: 1.7em;
+  }
+
+  .front-img .front-img-title {
+    font-size: 2em;
+  }
+
+  .front-title {
+    font-size: 2em;
+  }
+
+  /* Event row */
+  .events-row {
+    flex-direction: column;
+  }
+
+
+  /* Footer styles */
+  footer {
+    flex-direction: column;
+  }
+
+  footer .partners-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* For navigation bar and the header in the navigation */
+  header h5 {
+    font-size: 1rem;
+  }
+  .custom-nav {
+    font-size: 1rem;
+  }
+
+
+}
+
+
 @media screen and (min-width: 925px) {
 
+
+  /* Header and navigation bar*/
   header {
     position: fixed;
   }
@@ -117,228 +417,11 @@ header h5 {
 
 }
 
+/* ------------------------- */
+/*          Keyframe         */
+/* ------------------------- */
 
-@media screen and (max-width: 460px) {
-  header h5 {
-    font-size: 1rem;
-  }
 
-}
-
-p {
-  color: #fff;
-}
-
-footer {
-  width: 100%;
-  background-color: #0e1921;
-}
-
-.front-img {
-  width: 100%;
-  height: 65vh;
-  background-origin: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.front-img .front-img-title {
-  color: #fff;
-  font-size: 3em;
-  text-align: center;
-}
-@media screen and (max-width: 460px) {
-  .front-img .front-img-title {
-    font-size: 2em;
-  }
-}
-.front-img h3 {
-  color: white;
-}
-
-.front-title {
-  color: #fff;
-  font-size: 3em;
-  text-align: center;
-}
-@media screen and (max-width: 460px) {
-  .front-title {
-    font-size: 2em;
-  }
-}
-
-.text-comp {
-  background-color: #82B6D5;
-  width: 100%;
-  padding: 2em 0 2em 0;
-}
-
-.events-row {
-  width: 100%;
-  background-color: #172A38;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.event-box {
-  cursor: pointer;
-  flex: 1;
-  transition: background-color 0.2s;
-  padding: 2em;
-  /*tmp*/
-  min-height: 200px;
-  height: 300px;
-  display: flex;
-}
-.event-box div {
-  margin: auto;
-}
-.event-box h1 {
-  color: white;
-  text-align: center;
-  transition: transform 0.2s;
-}
-.event-box h1:hover {
-  transform: scale(1.05, 1.05);
-}
-.event-box p {
-  text-align: center;
-}
-
-.event-box:nth-child(even) {
-  background-color: #142531;
-}
-
-a:hover {
-  text-decoration: none !important;
-}
-
-.event-box:hover {
-  background-color: #0e1921;
-}
-.event-box:hover h1 {
-  transform: scale(1.05, 1.05);
-}
-
-.register-button {
-  border: 1px solid white;
-  border-radius: 6px;
-}
-
-.btn-goto-register h2 {
-  margin-bottom: 0 !important;
-}
-
-.register-company {
-  width: 100%;
-  background-color: #82B6D5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4em 0 4em 0;
-}
-
-.register-form {
-  width: 100%;
-  height: 100vh;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-}
-.register-form iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.program-container {
-  background-color: #172A38;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 5% 20% 5% 20%;
-}
-
-.program-item:nth-child(even) {
-  background-color: #172A38 !important;
-}
-
-.program-item:nth-child(odd) {
-  background-color: #0e1921 !important;
-}
-
-.program-item {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 2%;
-}
-.program-item h4 {
-  flex: 1;
-}
-.program-item h5 {
-  flex: 2;
-}
-.program-item h6 {
-  flex: 0.5;
-}
-
-footer {
-  display: flex !important;
-  height: 100%;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  padding: 1em;
-}
-footer .partners-container {
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 460px) {
-  footer .partners-container {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-footer p {
-  color: white;
-  margin: 0;
-}
-
-.partner-item img {
-  width: 150px;
-}
-
-.iaeste-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.iaeste-info img {
-  height: 48px;
-}
-.iaeste-info * {
-  color: white !important;
-}
-
-@media screen and (max-width: 460px) {
-  .program-container {
-    padding: 0 !important;
-  }
-
-  .front-img-title {
-    font-size: 1.7em;
-  }
-
-  .events-row {
-    flex-direction: column;
-  }
-
-  footer {
-    flex-direction: column;
-  }
-}
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
