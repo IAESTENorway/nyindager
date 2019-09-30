@@ -9,9 +9,8 @@ phases:
   build:
     commands:
       - yarn build
-      - yarn test --ci
+      - CI=true yarn test
 artifacts:
   files:
     - '**/*'
   base-directory: build
-  
