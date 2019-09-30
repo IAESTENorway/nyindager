@@ -5,6 +5,9 @@
   font-style: normal;
   font-weight: normal;
 }
+
+
+
 .fade-in {
   opacity: 1;
   animation-name: fadeInOpacity;
@@ -12,6 +15,10 @@
   animation-timing-function: ease-in;
   animation-duration: 0.7s;
 }
+
+/* ------------------------- */
+/*   MAIN STYLES  */
+/* ------------------------- */
 
 body {
   background-color: #0e1921 !important;
@@ -30,9 +37,22 @@ p, h5, h6 {
   font-family: Lato, sans-serif !important;
 }
 
+p {
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+/* ------------------------- */
+/*     HEADER   */
+/* ------------------------- */
+
 header {
   background-color: #0e1921;
-  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -52,24 +72,50 @@ header h5 {
   /*56px er høyden på header-baren*/
   line-height: 56px;
 }
-@media screen and (max-width: 460px) {
-  header h5 {
-    font-size: 1rem;
-  }
+
+/* ------------------------- */
+/*  NAVIGATION BAR */
+/* ------------------------- */
+
+.custom-nav {
+  text-align: center;
+  padding: 7.5px;
+  font-size: 1.1em;
 }
 
-p {
-  color: #fff;
+.custom-nav a {
+  text-decoration: none;
+  color: white;
+  font-family: HelveticaRounded, sans-serif !important;
+  padding: 7.5px;
 }
+
+.main-nav a:hover {
+	color: white;
+}
+
+.nav {
+  text-align: center;
+  justify-content: center;
+}
+
+.nav li {
+  display: inline-block;
+}
+
 
 footer {
   width: 100%;
   background-color: #0e1921;
 }
 
+/* ------------------------- */
+/*  FRONT IMAGE AND TITLE    */
+/* ------------------------- */
+
 .front-img {
   width: 100%;
-  height: 90vh;
+  height: 65vh;
   background-origin: center;
   display: flex;
   justify-content: center;
@@ -81,11 +127,7 @@ footer {
   font-size: 3em;
   text-align: center;
 }
-@media screen and (max-width: 460px) {
-  .front-img .front-img-title {
-    font-size: 2em;
-  }
-}
+
 .front-img h3 {
   color: white;
 }
@@ -95,11 +137,10 @@ footer {
   font-size: 3em;
   text-align: center;
 }
-@media screen and (max-width: 460px) {
-  .front-title {
-    font-size: 2em;
-  }
-}
+
+/* ------------------------- */
+/*        EVENT ROW          */
+/* ------------------------- */
 
 .text-comp {
   background-color: #82B6D5;
@@ -114,6 +155,10 @@ footer {
   flex-wrap: wrap;
 }
 
+/* ------------------------- */
+/*        EVENT BOX          */
+/* ------------------------- */
+
 .event-box {
   cursor: pointer;
   flex: 1;
@@ -124,19 +169,27 @@ footer {
   height: 300px;
   display: flex;
 }
+
 .event-box div {
   margin: auto;
 }
+
 .event-box h1 {
   color: white;
   text-align: center;
   transition: transform 0.2s;
 }
-.event-box h1:hover {
-  transform: scale(1.05, 1.05);
-}
+
 .event-box p {
   text-align: center;
+}
+
+/* ------------------------- */
+/*    Specified actions      */
+/* ------------------------- */
+
+.event-box h1:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .event-box:nth-child(even) {
@@ -154,14 +207,9 @@ a:hover {
   transform: scale(1.05, 1.05);
 }
 
-.register-button {
-  border: 1px solid white;
-  border-radius: 6px;
-}
-
-.btn-goto-register h2 {
-  margin-bottom: 0 !important;
-}
+/* ------------------------- */
+/*    REGISTRATION STYLES    */
+/* ------------------------- */
 
 .register-company {
   width: 100%;
@@ -178,10 +226,27 @@ a:hover {
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
 }
+
 .register-form iframe {
   width: 100%;
   height: 100%;
 }
+
+/*   Button styles   */
+.register-button {
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.btn-goto-register h2 {
+  margin-bottom: 0 !important;
+}
+
+
+
+/* ------------------------- */
+/*    PROGRAM STYLES    */
+/* ------------------------- */
 
 .program-container {
   background-color: #172A38;
@@ -191,6 +256,8 @@ a:hover {
   padding: 5% 20% 5% 20%;
 }
 
+
+/*   Active Styles   */
 .program-item:nth-child(even) {
   background-color: #172A38 !important;
 }
@@ -215,6 +282,10 @@ a:hover {
   flex: 0.5;
 }
 
+/* ------------------------- */
+/*          FOOTER           */
+/* ------------------------- */
+
 footer {
   display: flex !important;
   height: 100%;
@@ -227,17 +298,14 @@ footer .partners-container {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 460px) {
-  footer .partners-container {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
+
 footer p {
   color: white;
   margin: 0;
 }
 
+
+/*   Partner items     */
 .partner-item img {
   width: 150px;
 }
@@ -248,30 +316,112 @@ footer p {
   align-items: center;
   justify-content: space-between;
 }
+
 .iaeste-info img {
   height: 48px;
 }
+
 .iaeste-info * {
   color: white !important;
 }
 
+/* ------------------------- */
+/*      MEDIA QUERIES        */
+/* ------------------------- */
+
 @media screen and (max-width: 460px) {
+
+  /* Program page */
   .program-container {
     padding: 0 !important;
   }
 
+  /* Front image and title */
   .front-img-title {
     font-size: 1.7em;
   }
 
+  .front-img .front-img-title {
+    font-size: 2em;
+  }
+
+  .front-title {
+    font-size: 2em;
+  }
+
+  /* Event row */
   .events-row {
     flex-direction: column;
   }
 
+
+  /* Footer styles */
   footer {
     flex-direction: column;
   }
+
+  footer .partners-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* For navigation bar and the header in the navigation */
+  header h5 {
+    font-size: 1rem;
+  }
+  .custom-nav {
+    font-size: 1rem;
+  }
+
+
 }
+
+
+@media screen and (min-width: 925px) {
+
+
+  /* Header and navigation bar*/
+  header {
+    position: fixed;
+  }
+
+  .nav,
+  .main-nav,
+  .flexcontainer,
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: auto;
+  }
+
+  nav ul {
+      justify-content: flex-end;
+      flex-direction: row;
+	}
+
+  .main-nav li {
+    font-size: 1.3em;
+		padding: 5px;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+
+  .main-nav a {
+		padding: 10px;
+    font-size:  0.9em;
+	}
+
+}
+
+/* ------------------------- */
+/*          Keyframe         */
+/* ------------------------- */
+
+
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
