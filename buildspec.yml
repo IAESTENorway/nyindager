@@ -1,5 +1,8 @@
 version: 0.1
 phases:
+  install:
+    runtime-versions:
+      node: 10
   pre_build:
     commands:
       - yarn install --pure-lockfile
