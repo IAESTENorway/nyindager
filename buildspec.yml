@@ -1,0 +1,13 @@
+version: 0.1
+phases:
+  pre_build:
+    commands:
+      - yarn install --pure-lockfile
+  build:
+    commands:
+      - yarn build
+      - yarn test --ci
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
