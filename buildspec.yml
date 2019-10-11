@@ -1,4 +1,9 @@
 version: 0.2
+
+env:
+  variables:
+    ci: true
+
 phases:
   install:
     runtime-versions:
@@ -9,7 +14,8 @@ phases:
   build:
     commands:
       - yarn build
-      - CI=true yarn test
+      - yarn test
+      - yarn lint
 artifacts:
   files:
     - '**/*'
