@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class EventBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
       eventTitle: props.eventTitle,
-      stringDate: props.stringDate
+      stringDate: props.stringDate,
     };
   }
 
@@ -17,7 +17,7 @@ class EventBox extends Component {
     return (
       <div
         style={{ height: this.state.eventBoxHeight }}
-        ref={input => {
+        ref={(input) => {
           this.eventBox = input;
         }}
       >

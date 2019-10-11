@@ -1,9 +1,9 @@
-import React from "react";
-import inLogo from "../../img/in_logo_medium.png";
-import { Link } from "react-router-dom";
-import "./style.module.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import inLogo from '../../img/in_logo_medium.png';
+import './style.module.scss';
 
-const Header = () =>
+const Header = () => (
   <header>
     <div>
       <Link to="/">
@@ -18,6 +18,7 @@ const Header = () =>
       <a href="#top">Program</a>
       <a href="#top">Om oss</a>
     </nav>
-  </header>;
+  </header>
+);
 
 export default Header;

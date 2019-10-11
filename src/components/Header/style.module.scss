@@ -3,7 +3,7 @@
 /* ------------------------- */
 
 header {
-    padding: 4px;
+  padding: 4px;
   display: flex;
   justify-content: space-between;
   background-color: #0e1921;
@@ -54,7 +54,7 @@ nav {
     padding: 7.5px;
 
     @media screen and (max-width: 760px) {
-        font-size: 1rem;
+      font-size: 1rem;
     }
 
     &:hover {

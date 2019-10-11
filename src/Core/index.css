@@ -19,7 +19,7 @@
 /* ------------------------- */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -55,9 +55,9 @@ ul {
 }
 
 footer {
-    width: 100%;
-    background-color: #0e1921;
-  }
+  width: 100%;
+  background-color: #0e1921;
+}
 
 /* ------------------------- */
 /*  FRONT IMAGE AND TITLE    */
@@ -87,8 +87,6 @@ footer {
   font-size: 3em;
   text-align: center;
 }
-
-
 
 /* ------------------------- */
 /*    REGISTRATION STYLES    */
@@ -236,8 +234,6 @@ footer p {
     justify-content: center;
   }
 }
-
-
 
 /* ------------------------- */
 /*          Keyframe         */

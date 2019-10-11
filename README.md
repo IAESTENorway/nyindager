@@ -1,4 +1,3 @@
-
 # IN-dager v2
 This repository contains the code for our career fair website.
 The project is written in React
