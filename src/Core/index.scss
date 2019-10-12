@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@font-face {
+  font-family: HelveticaRounded;
+  src: url("../fonts/HelveticaRounded.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.7s;
+}
+
+/* ------------------------- */
+/*   MAIN STYLES  */
+/* ------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1921;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: HelveticaRounded, sans-serif;
+}
+
+p,
+h5,
+h6 {
+  font-family: Lato, sans-serif;
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* ------------------------- */
+/*  FRONT IMAGE AND TITLE    */
+/* ------------------------- */
+
+.front-img {
+  width: 100%;
+  height: 65vh;
+  background-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    color: white;
+  }
+}
+.front-title {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+
+/* ------------------------- */
+/*    REGISTRATION STYLES    */
+/* ------------------------- */
+
+.register-company {
+  width: 100%;
+  background-color: #82b6d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0 4em 0;
+}
+
+.register-form {
+  width: 100%;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+.register-form iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*   Button styles   */
+.register-button {
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.btn-goto-register h2 {
+  margin-bottom: 0;
+}
+
+/* ------------------------- */
+/*    PROGRAM STYLES    */
+/* ------------------------- */
+
+.program-container {
+  background-color: #172a38;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 20% 5% 20%;
+}
+
+/*   Active Styles   */
+.program-item:nth-child(even) {
+  background-color: #172a38;
+}
+
+.program-item:nth-child(odd) {
+  background-color: #0e1921 !important;
+}
+
+.program-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 2%;
+  h4 {
+    flex: 1;
+  }
+  h5 {
+    flex: 2;
+  }
+  h6 {
+    flex: 0.5;
+  }
+}
+/* ------------------------- */
+/*      MEDIA QUERIES        */
+/* ------------------------- */
+
+@media screen and (max-width: 460px) {
+  /* Program page */
+  .program-container {
+    padding: 0 !important;
+  }
+
+  /* Front image and title */
+  .front-img-title {
+    font-size: 1.7em;
+  }
+
+  .front-img .front-img-title {
+    font-size: 2em;
+  }
+
+  .front-title {
+    font-size: 2em;
+  }
+}
+/* ------------------------- */
+/*          Keyframe         */
+/* ------------------------- */
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

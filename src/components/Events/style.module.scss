@@ -1,0 +1,59 @@
+.textComp {
+  background-color: #82b6d5;
+  width: 100%;
+  padding: 2em 0 2em 0;
+}
+
+@media screen and (max-width: 460px) {
+  .eventsRow {
+    flex-direction: column;
+  }
+}
+
+.eventsRow {
+  width: 100%;
+  background-color: #172a38;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eventBox {
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 2em;
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h1:hover {
+    transform: scale(1.05, 1.05);
+  }
+
+  &:nth-child(even) {
+    background-color: #142531;
+  }
+
+  &:hover {
+    background-color: #0e1921;
+    h1 {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
+
+a:hover {
+  text-decoration: none !important;
+}
