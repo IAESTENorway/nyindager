@@ -6,10 +6,6 @@ import Header from "../components/Header";
 import RegisterCompany from "../components/RegisterCompany";
 import { events } from "../resources/data";
 
-/*eventName: props.match.params.event,
-      event: [],
-      isLoading: true,*/
-
 interface IProps {
   eventName: string;
 }
