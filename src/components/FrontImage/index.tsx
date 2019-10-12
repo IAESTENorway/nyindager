@@ -1,11 +1,11 @@
+import frontLogo from "img/in_logo_medium.png";
 import React, { FC } from "react";
-import frontLogo from "../../img/in_logo_medium.png";
 
 interface IProps {
-  image: String;
-  title: String;
-  className?: String;
-  undertitle?: String;
+  image: string;
+  title: string;
+  className?: string;
+  undertitle?: string;
 }
 
 const FrontImage: FC<IProps> = ({ image, title, undertitle, className }) => (

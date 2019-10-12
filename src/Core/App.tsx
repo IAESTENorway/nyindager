@@ -1,6 +1,6 @@
 import React from "react";
-import "./index.css";
 import MainRoute from "../routes/MainRoute";
+import "./index.scss";
 
 const App = () => <MainRoute />;
 

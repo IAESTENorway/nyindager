@@ -1,6 +1,6 @@
+import inLogo from "img/in_logo_medium.png";
 import React from "react";
 import { Link } from "react-router-dom";
-import inLogo from "../../img/in_logo_medium.png";
 import "./style.module.scss";
 
 const Header = () => (

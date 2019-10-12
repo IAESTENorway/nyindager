@@ -1,12 +1,12 @@
 import React from "react";
-import { Switch, Route, StaticRouter } from "react-router-dom";
-import Main from "../containers/Main";
+import { Route, StaticRouter, Switch } from "react-router-dom";
 import Event from "../containers/Event";
+import Main from "../containers/Main";
 
 const MainRoute = () => (
   <StaticRouter>
     <Switch>
-      <Route exact path="/" component={Main} />
+      <Route exact={true} path="/" component={Main} />
       <Route path="/:event" component={Event} />
     </Switch>
   </StaticRouter>

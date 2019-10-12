@@ -1,17 +1,17 @@
 import React, { FC, useState } from "react";
+import { dateToString } from "../components/EventRow";
+import Footer from "../components/Footer";
 import FrontImage from "../components/FrontImage";
 import Header from "../components/Header";
 import RegisterCompany from "../components/RegisterCompany";
-import Footer from "../components/Footer";
 import { events } from "../resources/data";
-import { dateToString } from "../components/EventRow";
 
 /*eventName: props.match.params.event,
       event: [],
       isLoading: true,*/
 
 interface IProps {
-  eventName: String;
+  eventName: string;
 }
 
 const defaultEvent = {
@@ -24,9 +24,9 @@ const defaultEvent = {
     {
       timeString: "--:--",
       description: "Mer info kommer",
-      eventHolder: "Mer info kommer",
-    },
-  ],
+      eventHolder: "Mer info kommer"
+    }
+  ]
 };
 
 const Event: FC<IProps> = ({ eventName }) => {
