@@ -1,6 +1,5 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
-import EventBox from "../EventBox";
+import EventBox from "./EventBox";
 import style from "./style.module.scss";
 
 interface IProps {
@@ -17,18 +16,11 @@ export const dateToString = (dateString: string) => {
 
   return `${day}. ${month} ${year}`;
 };
+
 const EventsRow: FC<IProps> = ({ events }) => (
-  <div className={style.eventRows}>
+  <div className={style.eventsRow}>
     {events.length
-      ? events.map(event => (
-          <Link
-            key={event.name}
-            className={style.EventBox}
-            to={`/${event.name.toLowerCase()}`}
-          >
-            <EventBox {...event} />
-          </Link>
-        ))
+      ? events.map(event => <EventBox key={event.name} {...event} />)
       : ""}
   </div>
 );

@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: #0e1921 !important;
+  background-color: #0e1921;
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
@@ -36,13 +36,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: HelveticaRounded, sans-serif !important;
+  font-family: HelveticaRounded, sans-serif;
 }
 
 p,
 h5,
 h6 {
-  font-family: Lato, sans-serif !important;
+  font-family: Lato, sans-serif;
 }
 
 p {
@@ -109,7 +109,7 @@ ul {
 }
 
 .btn-goto-register h2 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 /* ------------------------- */
@@ -126,7 +126,7 @@ ul {
 
 /*   Active Styles   */
 .program-item:nth-child(even) {
-  background-color: #172a38 !important;
+  background-color: #172a38;
 }
 
 .program-item:nth-child(odd) {
@@ -138,17 +138,16 @@ ul {
   flex-direction: row;
   align-items: flex-end;
   padding: 2%;
+  h4 {
+    flex: 1;
+  }
+  h5 {
+    flex: 2;
+  }
+  h6 {
+    flex: 0.5;
+  }
 }
-.program-item h4 {
-  flex: 1;
-}
-.program-item h5 {
-  flex: 2;
-}
-.program-item h6 {
-  flex: 0.5;
-}
-
 /* ------------------------- */
 /*      MEDIA QUERIES        */
 /* ------------------------- */

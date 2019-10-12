@@ -23,13 +23,11 @@
     "deploy": "aws s3 sync build/ s3://iaeste-norge-inny",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "yarn lint-ts ; yarn lint-less ; yarn lint-prettier",
+    "lint": "yarn lint-ts; yarn lint-prettier",
     "lint-ts": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "lint-less": "stylelint src/**/*.less",
     "lint-prettier": "prettier -c 'src/**/*.{ts,tsx,scss}'",
-    "lint:fix": "yarn lint-ts:fix && yarn lint-less:fix && yarn lint-prettier:fix",
+    "lint:fix": "yarn lint-ts:fix && yarn lint-prettier:fix",
     "lint-ts:fix": "tslint --fix -c tslint.json 'src/**/*.{ts,tsx}'",
-    "lint-less:fix": "yarn lint-less --fix",
     "lint-prettier:fix": "prettier --write 'src/**/*.{ts,tsx,scss}'"
   },
   "browserslist": {

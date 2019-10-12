@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { dateToString } from "../components/EventRow";
+import { dateToString } from "../components/Events/EventsRow";
 import Footer from "../components/Footer";
 import FrontImage from "../components/FrontImage";
 import Header from "../components/Header";
@@ -24,9 +24,9 @@ const defaultEvent = {
     {
       timeString: "--:--",
       description: "Mer info kommer",
-      eventHolder: "Mer info kommer"
-    }
-  ]
+      eventHolder: "Mer info kommer",
+    },
+  ],
 };
 
 const Event: FC<IProps> = ({ eventName }) => {
