@@ -1,5 +1,4 @@
-export const events = {
-  events: [
+export const events = [
     {
       name: "Trondheim",
       date: "2020-02-06",
@@ -19,23 +18,30 @@ export const events = {
       date: "2020-01-21",
       description:
         "Tirsdag 21. januar 2020 arrangeres IAESTEs Næringslivsdager ved UiS Stavanger. Arrangementet finner sted på PlaceholderLocation2.",
-      program: {
-        element1: "First",
-        element2: "2nth"
-      }
-    },
+        imgUrl: "/img/in_front.jpg",
+        program: [
+          {
+            timeString: "--:--",
+            description: "Mer info kommer",
+            eventHolder: "Mer info kommer"
+          }
+        ]
+      },
     {
       name: "Oslo",
       date: "2020-02-13",
       description:
         "Torsdag 13. februar 2020 arrangeres IAESTEs Næringslivsdager ved UiO Oslo. Arrangementet finner sted på PlaceholderLocation3.",
-      program: {
-        element1: "First",
-        element2: "2nth"
+        imgUrl: "/img/in_front.jpg",
+        program: [
+          {
+            timeString: "--:--",
+            description: "Mer info kommer",
+            eventHolder: "Mer info kommer"
+          }
+        ]
       }
-    }
-  ]
-};
+  ];
 
 export const purpose = {
   title: "Hva går pengene til?",
