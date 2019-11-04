@@ -16,7 +16,11 @@ header {
     .linkContainer {
       display: flex;
     }
-    
+
+    img {
+      width: auto;
+    }
+
     h5 {
       @media (max-width: 768px) {
         display: none;

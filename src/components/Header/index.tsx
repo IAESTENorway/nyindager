@@ -16,7 +16,7 @@ const Header = () => (
         Påmelding
       </a>
       <a href="#top">Program</a>
-      <a href="#top">Om oss</a>
+      <Link to="/about">Om oss</Link>
     </nav>
   </header>
 );

@@ -1,11 +1,8 @@
-import React, { FC, useState } from "react";
+import in_front from "img/in_front.jpg";
+import React, { FC } from "react";
 import { dateToString } from "../components/Events/EventsRow";
-import Footer from "../components/Footer";
 import FrontImage from "../components/FrontImage";
-import Header from "../components/Header";
-import RegisterCompany from "../components/RegisterCompany";
 import { events } from "../resources/data";
-
 interface IProps {
   eventName: string;
 }
@@ -20,29 +17,24 @@ const defaultEvent = {
     {
       timeString: "--:--",
       description: "Mer info kommer",
-      eventHolder: "Mer info kommer"
-    }
-  ]
+      eventHolder: "Mer info kommer",
+    },
+  ],
 };
 
 const Event: FC<IProps> = ({ eventName }) => {
-  const isLoading = useState(false);
-
-  const urlBase = "http://pires.no";
-
-  const { name, date, imgUrl, program } =
+  const { name, date, program, description } =
     events.find(e => e.name === eventName) || defaultEvent;
 
-  return !isLoading ? (
+  return (
     <div className="Event fade-in">
-      <Header />
       <FrontImage
-        image={urlBase + imgUrl}
+        image={in_front}
         title={`IAESTEs Næringslivsdager i ${name}`}
         undertitle={dateToString(date)}
       />
-      {/* <TextComponent title="" text={description} />
-        <TextComponent title="Program" text="" bgColor="#223847" /> */}
+      <p>{description}</p>
+      <h1>Program</h1>
       <div className="program-container">
         {program.length
           ? program.map(programEvent => {
@@ -56,12 +48,7 @@ const Event: FC<IProps> = ({ eventName }) => {
             })
           : ""}
       </div>
-
-      <RegisterCompany />
-      <Footer />
     </div>
-  ) : (
-    <>"LOADING"</>
   );
 };
 

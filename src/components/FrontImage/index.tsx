@@ -14,7 +14,7 @@ const FrontImage: FC<IProps> = ({ image, title, undertitle, className }) => (
     style={{ backgroundImage: `url(${image})` }}
     className={`front-img ${className}`}
   >
-    <img src={frontLogo} alt="" />
+    <img src={frontLogo} alt="" className={style.frontINLogo} />
     <h1 className={style.frontImgTitle}>{title}</h1>
     {undertitle && <h3>{undertitle}</h3>}
   </div>
