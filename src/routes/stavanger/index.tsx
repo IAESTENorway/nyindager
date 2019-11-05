@@ -1,4 +1,4 @@
-import { StvAbout } from "components/About";
+import { About } from "components/About";
 import Event from "containers/Event";
 import Main from "containers/Main";
 import React from "react";
@@ -9,7 +9,9 @@ const StvRouter = () => (
     <Route exact={true} path="/stavanger/">
       <Main city="stavanger" />
     </Route>
-    <Route path="/stavanger/about" component={StvAbout} />
+    <Route path="/stavanger/about">
+      <About city="stavanger" />
+    </Route>
     <Route path="/stavanger/:event" component={Event} />
   </Switch>
 );

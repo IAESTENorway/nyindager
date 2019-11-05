@@ -36,7 +36,3 @@ export const About: FC<Cities> = ({ city }) => {
     </div>
   );
 };
-
-export const TrdAbout: FC = () => <About city="trondheim" />;
-export const OslAbout: FC = () => <About city="oslo" />;
-export const StvAbout: FC = () => <About city="stavanger" />;
