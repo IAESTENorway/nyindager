@@ -1,15 +1,13 @@
 import inLogo from "img/in_logo_medium.png";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.module.scss";
+import styles from "./style.module.scss";
 
 const Header = () => (
   <header>
     <div>
-      <Link to="/">
+      <Link to="/" className={styles.linkContainer}>
         <img src={inLogo} alt="Logo" />
-      </Link>
-      <Link to="/">
         <h5>IAESTEs Næringslivsdager</h5>
       </Link>
     </div>
@@ -18,7 +16,7 @@ const Header = () => (
         Påmelding
       </a>
       <a href="#top">Program</a>
-      <a href="#top">Om oss</a>
+      <Link to="/about">Om oss</Link>
     </nav>
   </header>
 );

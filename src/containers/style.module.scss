@@ -1,0 +1,9 @@
+.textblock { 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+
+    &:nth-child(even) {
+        background-color: #79ABC8;
+    }
+}

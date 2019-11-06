@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const EventBox: FC<IProps> = ({ name, date }) => (
-  <Link key={name} className={style.eventBox} to={`/${name.toLowerCase()}`}>
+  <Link className={style.eventBox} to={`/${name.toLowerCase()}`}>
     <h1>{name}</h1>
     <p>
       <time>{date}</time>
