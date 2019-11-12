@@ -5,15 +5,14 @@ import { Link } from "react-router-dom";
 import styles from "./style.module.scss";
 
 function aboutPathExtender<T>(location: Location<T>): LocationDescriptor<T> {
-  const path = location.pathname;
-  return {
-    ...location,
-    pathname: path.endsWith("/about")
-      ? path
-      : path === "/"
-      ? "/about"
-      : path + "/about",
-  };
+  switch (location.pathname) {
+    case "/trondheim":
+    case "/oslo":
+    case "/stavanger":
+      return { ...location, pathname: location.pathname + "/about" };
+    default:
+      return { ...location, pathname: "/about" };
+  }
 }
 
 const Header = () => (
