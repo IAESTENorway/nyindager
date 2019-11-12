@@ -1,14 +1,12 @@
 import img_main from "img/in_front.jpg";
 import React, { FC } from "react";
 import { Cities } from "routes/types";
+import { capitalizeFirstLetter } from "routes/utils";
 import EventsRow from "../components/Events/EventsRow";
 import FrontImage from "../components/FrontImage";
 import RegisterCompany from "../components/RegisterCompany";
 import { events, main, purpose } from "../resources/data";
 import style from "./style.module.scss";
-
-const capitalizeFirstLetter = ([first, ...rest]: string) =>
-  [first.toLocaleUpperCase(), ...rest].join("");
 
 const Main: FC<Cities> = ({ city }) => {
   const titleLoc =
