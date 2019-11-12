@@ -5,5 +5,5 @@ export const WIPText = `
 
 Heisann! Du ser ut til å ha kommet til en side som ikke har blitt implementert helt ennå 😱. Vi beklager dette, men den vil bli implementert så fort som mulig!
 
-Kom tilbake Soon™️
+Kom tilbake snart.
 `;
