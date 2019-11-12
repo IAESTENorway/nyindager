@@ -1,7 +1,20 @@
+import { Location, LocationDescriptor } from "history";
 import inLogo from "img/in_logo_medium.png";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./style.module.scss";
+
+function aboutPathExtender<T>(location: Location<T>): LocationDescriptor<T> {
+  const path = location.pathname;
+  return {
+    ...location,
+    pathname: path.endsWith("/about")
+      ? path
+      : path === "/"
+      ? "/about"
+      : path + "/about",
+  };
+}
 
 const Header = () => (
   <header>
@@ -15,8 +28,8 @@ const Header = () => (
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaZm2GtqhIY6qDknF-6sRLToF156--YQwldpDOqk3UbSDDag/viewform">
         Påmelding
       </a>
-      <a href="#top">Program</a>
-      <Link to="/about">Om oss</Link>
+      <Link to="/program">Program</Link>
+      <Link to={aboutPathExtender}>Om oss</Link>
     </nav>
   </header>
 );
