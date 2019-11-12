@@ -1,7 +1,7 @@
+import { capitalizeFirstLetter } from "components/common/utils";
 import img_main from "img/in_front.jpg";
 import React, { FC } from "react";
 import { Cities } from "routes/types";
-import { capitalizeFirstLetter } from "routes/utils";
 import EventsRow from "../components/Events/EventsRow";
 import FrontImage from "../components/FrontImage";
 import RegisterCompany from "../components/RegisterCompany";

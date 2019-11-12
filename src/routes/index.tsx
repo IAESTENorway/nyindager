@@ -16,7 +16,7 @@ const Router = () => (
       <Switch>
         <Route exact={true} path="/" component={Main} />
         <Route path="/about" component={About} />
-        <Route path="/program" component={Program} />
+        <Route path="*/program" component={Program} />
         <Route path="/trondheim" component={TrdRouter} />
         <Route path="/oslo" component={OslRouter} />
         <Route path="/stavanger" component={StvRouter} />

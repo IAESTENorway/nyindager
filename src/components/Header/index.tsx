@@ -1,7 +1,8 @@
+import { capitalizeFirstLetter } from "components/common/utils";
 import inLogo from "img/in_logo_medium.png";
 import React from "react";
 import { Link } from "react-router-dom";
-import { capitalizeFirstLetter, CitiesList } from "routes/utils";
+import { CitiesList } from "routes/utils";
 import styles from "./style.module.scss";
 
 const Header = () => (
