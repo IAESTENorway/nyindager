@@ -11,7 +11,7 @@ interface IProps {
 
 const FrontImage: FC<IProps> = ({ image, title, undertitle, className }) => (
   <div
-    style={{ backgroundImage: `url(${image})` }}
+    style={{ backgroundImage: `url(${image})`, textAlign: "center" }}
     className={`front-img ${className}`}
   >
     <img src={frontLogo} alt="" className={style.frontINLogo} />
