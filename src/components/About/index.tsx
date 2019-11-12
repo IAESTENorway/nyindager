@@ -1,7 +1,7 @@
+import { Pane } from "components/common";
 import React, { FC } from "react";
 import ReactMarkdown from "react-markdown";
 import { Cities } from "routes/types";
-import styles from "./style.module.scss";
 
 const text = {
   national: `
@@ -31,8 +31,8 @@ NTNU, Trondheim Norway
 
 export const About: FC<Cities> = ({ city }) => {
   return (
-    <div className={styles.Pane}>
+    <Pane>
       <ReactMarkdown source={text[city ? city : "national"]} />
-    </div>
+    </Pane>
   );
 };
