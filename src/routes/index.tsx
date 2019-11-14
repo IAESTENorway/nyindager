@@ -1,6 +1,7 @@
 import { About } from "components/About";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import { Program } from "components/Program";
 import Main from "containers/Main";
 import React from "react";
 import { Route, Switch } from "react-router-dom";
@@ -15,6 +16,7 @@ const Router = () => (
       <Switch>
         <Route exact={true} path="/" component={Main} />
         <Route path="/about" component={About} />
+        <Route path="*/program" component={Program} />
         <Route path="/trondheim" component={TrdRouter} />
         <Route path="/oslo" component={OslRouter} />
         <Route path="/stavanger" component={StvRouter} />

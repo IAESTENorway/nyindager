@@ -1,8 +1,9 @@
+import { Pane } from "components/common";
 import groupPhoto from "img/in_group_photo.jpg";
 import React, { FC } from "react";
 import ReactMarkdown from "react-markdown";
 import { Cities } from "routes/types";
-import styles from "./style.module.scss";
+import { WIPText } from "components/common/utils";
 
 const text = {
   national: `
@@ -20,20 +21,20 @@ I år arrangeres IN den 06. februar 2020 på NTNU Gløshaugen. Målet med IAESTE
 
 ![Gruppebilde av IN-gruppen](${groupPhoto})
 
-Nederst på siden: 
-Kontakt oss: 
-NTNU, Trondheim Norway
-[+47 454 949 18](tel:+4745494918)
-[introndheim@iaeste.no](mailto:introndheim@iaeste.no)
+
+Kontakt oss:  
+NTNU, Trondheim Norway  
+[+47 454 949 18](tel:+4745494918)  
+[introndheim@iaeste.no](mailto:introndheim@iaeste.no)  
 `,
-  oslo: ``,
-  stavanger: ``,
+  oslo: WIPText,
+  stavanger: WIPText,
 };
 
 export const About: FC<Cities> = ({ city }) => {
   return (
-    <div className={styles.Pane}>
+    <Pane>
       <ReactMarkdown source={text[city ? city : "national"]} />
-    </div>
+    </Pane>
   );
 };
