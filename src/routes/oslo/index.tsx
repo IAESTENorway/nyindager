@@ -1,4 +1,5 @@
 import { About } from "components/About";
+import { Program } from "components/Program";
 import Event from "containers/Event";
 import Main from "containers/Main";
 import React from "react";
@@ -11,6 +12,9 @@ const OslRouter = () => (
     </Route>
     <Route path="/oslo/about">
       <About city="oslo" />
+    </Route>
+    <Route path="/oslo/program">
+      <Program />
     </Route>
     <Route path="/oslo/:event" component={Event} />
   </Switch>

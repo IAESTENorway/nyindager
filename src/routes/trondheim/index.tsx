@@ -1,4 +1,5 @@
 import { About } from "components/About";
+import { Program } from "components/Program";
 import Event from "containers/Event";
 import Main from "containers/Main";
 import React from "react";
@@ -11,6 +12,9 @@ const TrdRouter = () => (
     </Route>
     <Route path="/trondheim/about">
       <About city="trondheim" />
+    </Route>
+    <Route path="/trondheim/program">
+      <Program />
     </Route>
     <Route path="/trondheim/:event" component={Event} />
   </Switch>

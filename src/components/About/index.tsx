@@ -1,9 +1,9 @@
 import { Pane } from "components/common";
+import { WIPText } from "components/common/utils";
 import groupPhoto from "img/in_group_photo.jpg";
 import React, { FC } from "react";
 import ReactMarkdown from "react-markdown";
 import { Cities } from "routes/types";
-import { WIPText } from "components/common/utils";
 
 const text = {
   national: `
@@ -28,7 +28,7 @@ NTNU, Trondheim Norway
 [introndheim@iaeste.no](mailto:introndheim@iaeste.no)  
 `,
   oslo: WIPText,
-  stavanger: WIPText,
+  stavanger: WIPText
 };
 
 export const About: FC<Cities> = ({ city }) => {
