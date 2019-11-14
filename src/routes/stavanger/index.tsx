@@ -1,4 +1,5 @@
 import { About } from "components/About";
+import { Program } from "components/Program";
 import Event from "containers/Event";
 import Main from "containers/Main";
 import React from "react";
@@ -11,6 +12,9 @@ const StvRouter = () => (
     </Route>
     <Route path="/stavanger/about">
       <About city="stavanger" />
+    </Route>
+    <Route path="/stavanger/program">
+      <Program />
     </Route>
     <Route path="/stavanger/:event" component={Event} />
   </Switch>
