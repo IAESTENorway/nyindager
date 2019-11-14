@@ -1,4 +1,5 @@
 import { Pane } from "components/common";
+import groupPhoto from "img/in_group_photo.jpg";
 import React, { FC } from "react";
 import ReactMarkdown from "react-markdown";
 import { Cities } from "routes/types";
@@ -18,7 +19,7 @@ Kontakt oss: [prk@iaeste.no](mailto:prk@iaeste.no)
 Den første av IAESTEs næringslivsdager ble arrangert ved NTH (NTNU) i 1990. IAESTE Trondheim har siden den gang arrangert IN Trondheim hvert eneste år. Det første IN hadde 11 deltakende bedrifter og ble en stor suksess. I 1998 utvidet man for første gang arrangementet til to dager. Arrangementet ble utvidet til tre dager i 2008, men i 2015 ble det igjen satt til en dag.  
 I år arrangeres IN den 06. februar 2020 på NTNU Gløshaugen. Målet med IAESTEs næringslivsdager er å knytte kontakt mellom studenter og næringslivet, samt å skaffe en inntekt som kan finansiere IAESTEs hovedvirksomhet, som er utveksling for studenter med tanke på sommerjobb i utlandet.  
 
-Gruppebilde!!!!
+![Gruppebilde av IN-gruppen](${groupPhoto})
 
 
 Kontakt oss:  
