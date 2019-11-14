@@ -1,19 +1,9 @@
-import { Location, LocationDescriptor } from "history";
+import { capitalizeFirstLetter } from "components/common/utils";
 import inLogo from "img/in_logo_medium.png";
 import React from "react";
 import { Link } from "react-router-dom";
+import { CitiesList } from "routes/utils";
 import styles from "./style.module.scss";
-
-function aboutPathExtender<T>(location: Location<T>): LocationDescriptor<T> {
-  switch (location.pathname) {
-    case "/trondheim":
-    case "/oslo":
-    case "/stavanger":
-      return { ...location, pathname: location.pathname + "/about" };
-    default:
-      return { ...location, pathname: "/about" };
-  }
-}
 
 const Header = () => (
   <header>
@@ -27,8 +17,30 @@ const Header = () => (
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaZm2GtqhIY6qDknF-6sRLToF156--YQwldpDOqk3UbSDDag/viewform">
         Påmelding
       </a>
-      <Link to="/program">Program</Link>
-      <Link to={aboutPathExtender}>Om oss</Link>
+      <div className={styles.dropdownContainer}>
+        <Link to="/program">Program</Link>
+        {CitiesList.map(city => (
+          <Link
+            className={styles.dropdownHidden}
+            key={city}
+            to={"/" + city + "/program"}
+          >
+            {capitalizeFirstLetter(city)}
+          </Link>
+        ))}
+      </div>
+      <div className={styles.dropdownContainer}>
+        <Link to="/about">Om oss</Link>
+        {CitiesList.map(city => (
+          <Link
+            className={styles.dropdownHidden}
+            key={city}
+            to={"/" + city + "/about"}
+          >
+            {capitalizeFirstLetter(city)}
+          </Link>
+        ))}
+      </div>
     </nav>
   </header>
 );

@@ -11,6 +11,8 @@ header {
   width: 100%;
   z-index: 100;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  height: 72px;
+  overflow: clip;
 
   div {
     .linkContainer {
@@ -65,6 +67,49 @@ nav {
 
     &:hover {
       color: white;
+    }
+  }
+}
+
+.dropdownContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  z-index: 69;
+
+  > * + * {
+    padding-top: 0.5rem;
+  }
+
+  .dropdownHidden {
+    display: inline-block;
+    background-color: #172a38;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    &:last-child {
+      border-radius: 0 0 3px 3px;
+      padding-bottom: 1rem;
+    }
+  }
+
+  > .dropdownHidden {
+      visibility: hidden;
+      height: 0;
+    }
+
+  &:hover,
+  &:focus-within {
+    :first-child {
+      background-color: #172a38;
+      border-radius: 3px 3px 0 0;
+    }
+    .dropdownHidden {
+      background-color: #172a38;
+      height: auto;
+      visibility: visible;
     }
   }
 }
