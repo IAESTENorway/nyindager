@@ -17,9 +17,9 @@ const defaultEvent = {
     {
       timeString: "--:--",
       description: "Mer info kommer",
-      eventHolder: "Mer info kommer",
-    },
-  ],
+      eventHolder: "Mer info kommer"
+    }
+  ]
 };
 
 const Event: FC<IProps> = ({ eventName }) => {

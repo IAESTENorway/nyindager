@@ -9,7 +9,7 @@ it("renders without crashing", () => {
     <MemoryRouter>
       <App />
     </MemoryRouter>,
-    div,
+    div
   );
   ReactDOM.unmountComponentAtNode(div);
 });

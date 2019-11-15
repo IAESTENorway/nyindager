@@ -3,7 +3,6 @@
 }
 
 .iaesteInfo {
-
   img {
     width: 48px;
     height: 48px;
@@ -25,18 +24,18 @@ footer {
   width: 100%;
   background-color: #0e1921;
 
-  .partnersContainer  {
+  .partnersContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     > div {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
 
       > * + * {
-       margin-left: 1rem;
+        margin-left: 1rem;
       }
     }
   }
