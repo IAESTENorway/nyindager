@@ -8,13 +8,13 @@ const sponsors = [
   {
     name: "NTNU",
     logo: NTNU,
-    webUrl: "https://ntnu.no",
+    webUrl: "https://ntnu.no"
   },
   {
     name: "KarriereStart",
     logo: KarriereStart,
-    webUrl: "https://karrierestart.no",
-  },
+    webUrl: "https://karrierestart.no"
+  }
 ];
 
 const Footer: FC = () => (
